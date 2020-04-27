@@ -1,0 +1,40 @@
+/*  MODELO DE CAJA CSS
+ES EL COMPORTAMIENTO QUE HACE QUE TODOS LOS ELEMENTOS DE TIPO BLOQUE, DE UN DOCUMENTO
+HTML, SE REPRESENTEN MEDIANTE CAJAS RECTANGULARES QUE TIENEN ALGUNAS PROPIEDADES COMUNES
+COMO ANCHO Y ALTO (CONTENIDO), RELLENO (PADDING), BORDER Y MARGIN (NO ES PARTE DEL CONTENIDO).
+
+SI UN ELEMENTO (DE BLOQUE O LÍNEA) NO TIENE DEFINIDO EL ALTO (height), ENTONCES TOMARÁ LA ALTURA
+QUE LE PROPORCIONE SU CONTENIDO INTERNO.
+
+DESDE ADENTRO HACIA AFUERA, LAS PROPIEDADES SIGUEN EL SIGUIENTE ORDENAMIENTO:
+CONTENIDO > PADDING > BORDER > MARGIN
+
+EL MARGIN SIRVE PARA SEPARAR UNA CAJA DE OTRA.
+
+Por defecto en el modelo de caja de CSS, el ancho y alto asignado a un elemento es aplicado solo al contenido de la caja
+del elemento (con width y height). Y como sabemos, una caja puede tener algun borde (border) o relleno (padding).
+Por lo tanto el tamaño final va a ser el tamaño del contenido, más el tamaño del borde y padding.
+
+Si nosotros queremos que el tamaño de la caja incluya el border y padding, entonces podemos usar la propiedad
+box-sizing.
+> box-sizing: content-box;
+  Es el comportamiento CSS por defecto para el tamaño de la caja. Si se define el ancho de un elemento en 100 pixeles,
+  la caja del contenido del elemento tendrá 100 pixeles de ancho, y el ancho de cualquier borde o relleno deberá sumarse
+  para obtener el tamaño final.
+
+> box-sizing: border-box;
+  Si por ejemplo se define el elemento con un ancho de 100 pixeles, esos 100 pixeles incluíran cualquier borde o relleno
+  extra que se especifique, y la caja de contenido se encogerá para absorber ese ancho extra.
+  Esto típicamente hace mucho más fácil dimensionar elementos.
+*/
+
+div{ /* el tamaño final de esta caja es 40px por 40px (aunque le modifique el padding o border)*/
+  width: 40px;
+  height: 40px;
+  border: black 2px dashed;
+  padding: 5px;
+  margin: 20px;
+  box-sizing: border-box; /* el tamaño final incluye border y paddin pero NO el margin */
+  background-color: orange;
+
+}

@@ -1,0 +1,24 @@
+ETIQUETAS SEMÁNTICAS
+
+Esta etiqueta convierte el texto en negrita. No es semántica.
+<b> texto en negrita (sin semántica)</b>
+
+Esta etiqueta convierte el texto en negrita y aporta semántica (le dice al buscador que es importante).	
+<strong> texto en negrita (con semántica)</strong>
+	
+Convierte el texto en italic. No aporta semántica.
+<i> palabra importante </i>
+
+Convierte el texto en italic. Aporta semántica.
+<em> palabra importante </em>
+
+Destacamos una parte del texto que es relevante. Sirve para llamar la atención del lector.
+Por defecto se va a ver con un fondo de color amarillo.
+<mark>Parte a resaltar</mark>
+
+Define una cita.
+<cite>Parte del texto a cital</cite>
+
+Define una abreviación o acrónimo (es decir, la versión corta repreentada por siglas).
+Al pasar el mouse por encima del elemento veremos lo que hemos definido en el atributo title.
+<abbr title="Digital House">DH</abbr>

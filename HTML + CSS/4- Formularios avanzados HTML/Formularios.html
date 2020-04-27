@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <!-- Formulario sencillo HTML -->
+    <form class="" action="index.html" method="post">
+      <p>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" name="nombre" value="" placeholder="ingrese su nombre..." required>
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" value="" placeholder="ingrese su email...">
+      </p>
+      <p>
+        <label for="pass">Contraseña:</label>
+        <input id="pass" type="password" name="pass" value="" placeholder="ingrese su contraseña">
+      </p>
+      <p>
+        <label for="cine">¿Ya asistió al cine este año?</label>
+        <br>
+        <input type="radio" name="cine" value="s"> Sí
+        <br>
+        <input type="radio" name="cine" value="n" checked> No
+      </p>
+      <p>
+        <label for="genero">Seleccione sus generos preferidos</label>
+        <br>
+        <input type="checkbox" name="genero" value="d"> Drama
+        <br>
+        <input type="checkbox" name="genero" value="c"> Comedia
+        <br>
+        <input type="checkbox" name="genero" value="a" checked> Accion
+        <br>
+        <input type="checkbox" name="genero" value="t"> Terror
+      </p>
+      <p>
+        <label for="pais">País:</label>
+        <select class="" name="pais" id="pais">
+          <option value="ar">Argentina</option>
+          <option value="br">Brasil</option>
+          <option value="co">Colombia</option>
+        </select>
+      </p>
+      <p>
+        <label for="comentarios">Comentarios:</label>
+        <br>
+        <textarea id="comentarios" name="comentarios" rows="8" cols="80">texto por defecto</textarea>
+      </p>
+      <p>
+        <button type="submit" name="button">
+          Enviar <!-- Podríamos poner una imagen aquí -->
+        </button>
+        <button type="reset" name="button">
+          Reiniciar <!-- Podríamos poner una imagen aquí -->
+        </button>
+      </p>
+    </form>
+  </body>
+</html>

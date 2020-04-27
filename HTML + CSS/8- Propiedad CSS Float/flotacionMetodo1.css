@@ -1,0 +1,58 @@
+/* UNA FORMA SENCILLA DE ALINEAR CAJAS (COLOCAR UNA AL LADO DE OTRA):
+Esta técnica se utiliza para alinear elementos de tipo Bloque.
+Los elementos que deseamos alinear tienen que estar en un contenedor
+padre, el mismo debe especificar la propiedad overflow: hidden;
+
+Nota: Esta propiedad se conoce como "excedente" y permite
+que el contenido del contenedor no se muestre más allá de los límites
+de éste (se recorta). Los demás elementos que estén al mismo nivel
+siempre se van a ubicar por debajo del contenedor.
+
+Los elementos hijos, deben contener la propiedad
+float: left;
+En el siguiente ejemplo, la caja padre es Section y las cajas
+a alinear son los Artículos (article).
+*/
+
+header{
+  background-color: #FF533D;
+  width: 80%;
+  padding: 15px 15px;
+  margin: 0 auto; /* Permite centrar el contenedor */
+  box-sizing: border-box;
+}
+
+section{
+  background-color: #F5F5F5;
+  width: 80%;
+/*height: tomará por defecto el height del contenido */
+  padding: 0px 15px; /* padding a los lados */
+  padding-top: 15px; /* padding arriba */
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden; /* importante para mantener la estructura de la pagina*/
+}
+
+article{
+  background-color: #AB987A;
+  width: 20%; /* 4 * 20 = 80 % */
+  height: 90px;
+  padding: 10px; /* padding en los 4 lados */
+
+  /* El margen de 4 articulos sería 8*2,5= 20% */
+  /* por lo tanto el Width más el Margen de los 4 articulos nos da el 100% del ancho total */
+  margin-left:2.5%;
+  margin-right:2.5%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  float: left; /* permite colocar las cajas una al lado de la otra */
+}
+
+footer{
+  background-color: #0F1626;
+  color: #F5F5F5;
+  width: 80%;
+  padding: 15px 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

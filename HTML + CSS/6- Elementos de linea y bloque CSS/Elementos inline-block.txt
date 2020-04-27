@@ -1,0 +1,7 @@
+Explicación detallada de:
+display: inline;
+display: block;
+display:inline-block;
+
+
+https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx

@@ -1,0 +1,61 @@
+/* ELEMENTOS DE BLOQUE O DE LÍNEA
+Todos ellos están definidos implícitamente por la propiedad
+display:block ó display:inline
+Aunque ciertamente esta propiedad puede modificarse, es decir que un
+elemento de bloque puede cambiarse a un elemento en línea y viceversa.
+
+Pero además, esta propiedad display puede tomar muchos otros valores:
+> inline-block: comportamiento semi-bloque. Puede recibir propiedades del modelo de caja y comparte propiedades de elementos en línea.
+> none: desactiva la visualización del elemento pero sigue existiendo en la estructura del documento).
+> otros más: https://developer.mozilla.org/es/docs/Web/CSS/display
+
+Contenedores o Cajas de tipo Bloque:
+Las etiquetas de bloque intentan ocupar el 100% del ancho.
+Visualmente siempre generan un salto de linea.
+Entre ellas tenemos:
+    <div>
+    <p>
+    <h1> <h2> <h3> <h4> <h5> <h6>
+    <ul> <ol> <li>
+    <form>
+    <header> <footer> <section> <article>
+*/
+header{
+  display:
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  background-color: blue;
+  margin:10px;
+}
+section{
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  background-color: yellow;
+  margin:10px;
+}
+footer{
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  background-color: violet;
+  margin:10px;
+}
+
+/* Contenedores o Cajas de tipo Línea
+Las etiquetas en línea ocupan sólo el ancho de su contenido
+y no cambian la distribución del sitio. Es decir, no generan
+saltos de línea por defecto por lo que se pueden posicionar
+una al lado de la otra cuando su contenido no es extenso.
+Algunas de estas etiquetas son:
+    <img>
+    <span>
+    <a>
+    <button>
+    <input>
+    <span>
+*/
+span{
+  background-color: red;
+}

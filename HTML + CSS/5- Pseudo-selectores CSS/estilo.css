@@ -1,0 +1,45 @@
+/* PSEUDO-SELECTORES
+Nos permiten controlar eventos específicos de un elemento.
+Por ejemplo cuando pasamos el mouse por encima, o cuando tenemos el foco.
+La sintaxis es la siguiente:
+selector:pseudoselector{
+  propiedad: valor;
+}
+*/
+
+/* Cuando pasamos el mouse sobre el input */
+input:hover{
+  background-color: orange;
+}
+
+/* Cuando tenemos el foco en el input (hicimos click en él)*/
+input:focus{
+  background-color: violet;
+}
+
+/* Veamos el pseudo selector nth-child(An+B)
+  donde:
+  A es un numero entero que se multiplica por n.
+  n es la posición numérica del elemento (siempre empiezan en 1)
+  B es otro numero entero que se suma al resultado de An.
+  Ejemplos:
+  p:nth-child(1) >> representa el primer elemento párrafo
+  :nth-child(5)  >> representa el quinto elemento de la pagina
+  :nth-child(5n) >> representa los elementos 5, 10, 15, etc.
+  :nth-child(3n+4) >> representa los elementos 7, 10, 13, etc.
+
+Veamos algunos ejemplos concretos: */
+/* Pinta sólo el párrafo 2 de color naranja */
+p:nth-child(2){
+  background-color: orange;
+}
+
+/* Pinta las filas impares */
+tr:nth-child(odd){ /*similar a tr:nth-child(2n+1)*/
+  background-color: lime;
+} /* Nota: para pintar las columnas uso td */
+
+/* Pinta las filas pares */
+tr:nth-child(even) {/*similar a tr:nth-child(2n)*/
+  background-color: cyan;
+}
